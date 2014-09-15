@@ -10,16 +10,21 @@
 </div>
 
 <aside class="notes">
+<h4>slide: 14</h4>
+<small>
+<p>
 	Many objects have duplicate method names, however they do not all function the same. *If we try:
-
+</p>
+<p>
  “one” + 4 #=> TypeError: no implicit conversion of Fixnum into String
-
+</p>
+<p>
 Ruby will try to concatenate “one” and 4, however strings and integers cannot be concatenated in this manner,* likewise: 
-
+</p>
 4 + “one” #=> TypeError: String can't be coerced into Fixnum
-
+<p>
 Would attempt to add an integer to a string, which also cannot happen in Ruby. 
-
+</p>
 Ruby programmers need to be aware of data types when programming. Since everything is an object, it’s possible different objects have different expectations when being combined. Two integers would give us addition, two strings would give us concatenation. Mixing types requires one party to be converted for a successful operation. 
-
+</small>
 </aside>

@@ -15,12 +15,17 @@
 <p class="fragment">Use underscores to space out numbers</p>
 
 <aside class="notes">
-slide :24
+<h4>slide :24</h4>
+<small>
+<p>
 In terms of number format, Ruby does not use commas to separate places. * If you do, some odd things may occur:
-
+</p>
+<p>
 ten_thousand = 10000  #=> 10000 
 ten_thousand = 10,000 #=> [10, 0]
 ten_thousand = 10_000 #=> 10000
+</p>
 
 In the second case, the comma cases Ruby to assign ten_thousand as an array with 2 values: 10 and 0. * If you need to space out your letters, underscores will do fine. 
+</small>
 </aside>

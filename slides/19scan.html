@@ -15,12 +15,17 @@
 </div>
 
 <aside class="notes">
-slide: 19
+<h4>slide: 19</h4>
+<small>
+<p>
 It seems that if we’re only considering letters, * then all we’ll have to do is remove punctuation and spaces, then * we can reverse what is * left to check against our input. We’ll also have to make sure that when we do our comparison, the input is also devoid of spaces and punctuation. *
-
+</p>
+<p>
 The :scan method is just what we need in this case. We can pass in regular expression to match for a particular pattern in our text. In this case, we’ll match any word character. 
+</p>
 
 “A Toyota”.downcase.reverse.scan(/\w/) == “A Toyota”.downcase.scan(/\w/) #=> true
+</small>
 </aside>
 
 <style>
