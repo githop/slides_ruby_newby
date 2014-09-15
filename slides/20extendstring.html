@@ -1,0 +1,21 @@
+<h2>String Class</h2>
+<p>Why not add these feature to the string class itself?</p>
+
+<pre>
+	<code>
+class String
+
+  def palindrome?
+    self.downcase.reverse.scan(/\w/) == self.downcase.scan(/\w/) ? true : false 
+  end
+
+end
+
+	</code>
+</pre>
+
+<aside class="notes">
+slide: 20
+
+Before refactoring our palindrome method to include these new features, why not add them to the String class itself? After all, everything in Ruby is an object and we’ll be able to use our new method in a sugary way:
+</aside>

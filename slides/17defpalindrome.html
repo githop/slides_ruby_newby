@@ -1,0 +1,17 @@
+<h2>Palindrome Method</h2>
+
+<div class="fragment">
+	<pre>
+		<code>
+	def palindrome(str)
+	  str.downcase.reverse == str.downcase ? true : false 
+	end
+
+	palindrome(“Racecar”) #=> true
+		</code>
+	</pre>
+</div>
+
+<aside class="notes">
+This way, our data is somewhat normalized; if we input strings, we’ll always be comparing them in lowercase. * So far, this is what our program looks like: 
+</aside>

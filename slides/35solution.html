@@ -1,0 +1,28 @@
+<h2>Solution</h2>
+
+<p>We're ready to solve</p>
+
+<div class="fragment">
+	<pre>
+		<code>
+	1.upto(20) do |n|
+	  if n.divides_by(5) &amp;&amp; n.divides_by(3)
+	    puts 'fizz buzz'
+	  elsif n.divides_by(5)
+	    puts 'buzz'
+	  elsif n.divides_by(3)
+	    puts 'fizz'
+	  else
+	    puts n
+	  end
+	end
+		</code>
+	</pre>
+</div>
+
+<aside class="notes">
+slide: 35
+*
+Now we won’t have long expressions in our code. WIth our new :divides_by() Integer method, :upto(n), and a wicked conditional, we have everything we need to solve Fizzbuzz. 
+
+</aside>

@@ -1,0 +1,21 @@
+<h2>Ruby vs JS</h2>
+
+<div class="fragment">
+<p>Ruby</p>
+<pre><code style="font-size:24px">sum(“2”, 2) #=>  TypeError: String can't be coerced into Fixnum</code></pre>
+</div>
+<div class="fragment">
+<p>JavaScript</p>
+<pre><code style="font-size:24px">sum(“2”, 2) #=> “22” </code></pre>
+</div>
+
+<aside class="notes">
+Ruby isn’t as loosely typed as JavaScript, for contrast. *If we called 
+
+sum(“2”, 2) #=>  TypeError: String can't be coerced into Fixnum
+
+we’d get the error above, *but in JS: 
+
+sum(“2”, 2) #=> “22” 
+
+</aside>

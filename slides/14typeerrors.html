@@ -1,0 +1,25 @@
+<h2>Type Errors</h2>
+
+<div class="fragment">
+	<pre><code style="font-size:22px">“one” + 4 #=> TypeError: no implicit conversion of Fixnum into String</code></pre>
+	<p>Strings and Integers cannot be concatenated</p>
+</div>
+<div class="fragment">
+	<pre><code style="font-size:22px">4 + “one” #=> TypeError: String can't be coerced into Fixnum</code></pre>
+	<p>Integers and Strings cannot be added</p>
+</div>
+
+<aside class="notes">
+	Many objects have duplicate method names, however they do not all function the same. *If we try:
+
+ “one” + 4 #=> TypeError: no implicit conversion of Fixnum into String
+
+Ruby will try to concatenate “one” and 4, however strings and integers cannot be concatenated in this manner,* likewise: 
+
+4 + “one” #=> TypeError: String can't be coerced into Fixnum
+
+Would attempt to add an integer to a string, which also cannot happen in Ruby. 
+
+Ruby programmers need to be aware of data types when programming. Since everything is an object, it’s possible different objects have different expectations when being combined. Two integers would give us addition, two strings would give us concatenation. Mixing types requires one party to be converted for a successful operation. 
+
+</aside>

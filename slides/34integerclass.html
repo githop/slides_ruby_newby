@@ -1,0 +1,31 @@
+<h2>Integer Class</h2>
+
+<p>extend integer class</p>
+<p><code>:divides_by(n)</code></p>
+
+<div class="fragment">
+	<pre>
+		<code>
+	class Integer
+	  def divides_by?(n)
+	    self % n == 0 ? true : false 
+	  end
+	end
+
+		</code>
+	</pre>
+</div>
+
+<div class="fragment">
+	<pre><code>	9.divides_by(3) #=> true</code></pre>
+	<p>^ very slick ^</p>
+</div>
+
+<aside class="notes">
+slide: 34
+We could solve this without adding methods to the class Integer, however, having a method such as :divides_by(n) would go a long way to streamlining our code. Let’s implement the following: *  
+
+Now we can do something like: * 
+
+
+</aside>

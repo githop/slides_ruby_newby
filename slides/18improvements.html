@@ -1,0 +1,16 @@
+<h2>Refactor</h2>
+<p>room for improvement</p>
+
+<p class="fragment">Does not work on phrases</p>
+<div class="fragment">
+	<p>New rules apply to phrases:</p>
+	<pre><code style="font-size:24px"> “A Toyota”.downcase.reverse == “A Toyota”.downcase #=> false</code></pre>
+</div>
+
+<aside class="notes">
+slide: 18
+
+This works great, but we can always improve. * This only works on single word palindromes, how about phrases? Simply reversing the string in this case will no longer work, * as phrases tend to have punctuation and palindromic phrases are allowed to have separate letter spacing as well. For example “A Toyota” is considered a palindrome, despite that
+	
+ “A Toyota”.downcase.reverse == “A Toyota”.downcase #=> false 
+</aside>
