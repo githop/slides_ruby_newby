@@ -1,0 +1,33 @@
+<h2>Two plus Two
+  <small class="fragment">
+    <em>take two!
+      <em>
+  </small>
+</h2>
+
+<pre>
+		<code style="font-size:30px">
+    "Two".class  #=> String
+    2.integer?   #=> true
+		</code>
+	</pre>
+
+<p class="fragment">Everything is an Object</p>
+
+    <div class="fragment">
+      <p>How do we usually call methods on objects?</p>
+      <code>2.+ 2 #=> 4</code>
+    </div>
+
+<aside class="notes">
+slide: 4
+*Back to our simple expression, 
+
+As far as Ruby is concerned, it would need a lot more information to accomplish the above task. Ruby can handle the word “two” and number 2, however they are not letters or numbers, *they are both in fact objects, one of class String and one of class Integer. Addition, as well as other math operations in Ruby, are indeed   *methods available to objects and can even be used with dot notation: 
+
+
+2.+ 2 #=> 4 
+
+*technically 2.class yields Fixnum ; for our purposes integers are fine
+</aside>
+

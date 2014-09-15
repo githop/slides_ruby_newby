@@ -1,0 +1,20 @@
+<h2>Palindromes</h2>
+<div class="fragment">
+  <pre><code>  “Racecar”.reverse #=> "racecaR"</code></pre>
+</div>
+
+<div class="fragment">
+  <p>There is only one problem:</p>
+  <pre><code>  “Racecar” == “racecaR” #=> false</code></pre>
+</div>
+
+<div class="fragment">
+  <p>Solution:
+    <code>:downcase</code>
+  </p>
+  <pre><code>  “Racecar”.downcase.reverse == “Racecar”.downcase  #=> true</code></pre>
+</div>
+
+<aside class="notes">
+  *So let's try calling reverse on a string. * There is only one problem: “Racecar” == “racecaR” #=> false The last problem is the casing doesn’t seem to match. To remedy this, we’ll use another *String method: :downcase. “Racecar”.downcase.reverse == “Racecar”.downcase #=> true
+</aside>
