@@ -1,25 +1,31 @@
 <h2>Palindromes</h2>
 <div class="fragment">
-  <pre><code>  “Racecar”.reverse #=> "racecaR"</code></pre>
+  <pre><code style="font-size:30px">  “Racecar”.reverse #=> "racecaR"</code></pre>
 </div>
 
 <div class="fragment">
   <p>There is only one problem:</p>
-  <pre><code>  “Racecar” == “racecaR” #=> false</code></pre>
+  <pre><code style="font-size:30px">  “Racecar” == “racecaR” #=> false</code></pre>
 </div>
 
 <div class="fragment">
   <p>Solution:
-    <code>:downcase</code>
+    <code style="font-size:30px">:downcase</code>
   </p>
-  <pre><code>  “Racecar”.downcase.reverse == “Racecar”.downcase  #=> true</code></pre>
+  <pre><code style="font-size:24px">  “Racecar”.downcase.reverse == “Racecar”.downcase  #=> true</code></pre>
 </div>
 
 <aside class="notes">
 <h4>slide: 16</h4>
 <small>
 <p>
-  *So let's try calling reverse on a string. * There is only one problem: “Racecar” == “racecaR” #=> false The last problem is the casing doesn’t seem to match. To remedy this, we’ll use another *String method: :downcase. “Racecar”.downcase.reverse == “Racecar”.downcase #=> true
+  *So let's try calling reverse on a string. * There is only one problem:
+  </p>
+  <p>
+  “Racecar” == “racecaR” #=> false
+  </p>
+   <p>
+   The last problem is the casing doesn’t seem to match. To remedy this, we’ll use another *String method: :downcase. “Racecar”.downcase.reverse == “Racecar”.downcase #=> true
   </p>
   </small>
 </aside>
